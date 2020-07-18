@@ -7,10 +7,3 @@ new Vue({
     item3: 0
   }
 }) 
-
-
-
-
-document.getElementById('close').onclick = function close (){
-document.getElementById('mone').style.display = 'none';
-}
