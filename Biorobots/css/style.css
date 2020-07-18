@@ -1,0 +1,1057 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body > div#app {
+margin: 0;
+height: 2467px;
+background: radial-gradient(82.33% 70.44% at 50% 0%, #26394D 0%, #212529 100%);
+}
+
+button{
+  outline:none;
+}
+.Center{
+  margin: auto;
+  width: 1016px;
+  height: 100%;
+  position: relative;
+}
+.make{
+  color: white;
+  text-decoration: none;
+}
+.logo{
+  position: absolute;
+  width: 78px;
+  height: 48px;
+  top: 48px;
+  display: flex;
+  align-items: center;
+}
+.Subtract{
+  display: flex;
+  align-items: center;
+}
+.Ellipse{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border-right: 24px solid transparent;
+  border-top: 24px solid #FF7F22;
+  border-left: 24px solid #FF7F22;
+  border-bottom: 24px solid #FF7F22;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.Ellipse1{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #FF7F22;
+    border-radius: 100%;
+    left: 39px;
+}
+.Ellipse2{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #FF7F22;
+    border-radius: 100%;
+    left: 54px;
+}
+.Ellipse3{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #FF7F22;
+    border-radius: 100%;
+    left: 69px;
+}
+.Rectangle7{
+position: absolute;
+    width: 236px;
+    height: 48px;
+    left: 780px;
+    top: 48px;
+    border: 2px solid #FF7F22;
+    border-radius: 60px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: no-repeat;
+    cursor: pointer;
+}
+.Rectangle7:hover{
+  background: #FF5722;
+}
+.content{
+
+}
+.texts{
+
+}
+.FPPB{
+  position: absolute;
+width: 470px;
+height: 216px;
+left: 130px;
+top: 216px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 56px;
+line-height: 72px;
+color: #FFFFFF;
+}
+.KMK{
+  position: absolute;
+width: 470px;
+height: 32px;
+left: 130px;
+top: 455px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+
+color: #A3B8CC;
+}
+.imgs{
+position: absolute;
+width: 366px;
+height: 320px;
+left: 650px;
+top: 192px;
+
+}
+.Ellipse4{
+position: absolute;
+width: 275px;
+height: 275px;
+left: 31px;
+top: 4px;
+border-radius: 100%;
+background: #1E2936;
+z-index: -1;
+}
+.subtract{
+position: absolute;
+width: 176px;
+height: 309.31px;
+left: 0px;
+top: 0.69px;
+}
+.subtract2{
+position: absolute;
+width: 138.35px;
+height: 195.89px;
+left: 194.35px;
+top: 102px;
+transform: scale(1, 1);
+}
+.s{
+position: absolute;
+width: 24px;
+height: 24px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #667380;
+}
+.s1{
+top: 240px;
+}
+.s2{
+top: 621px;
+}
+.s3{
+top: 955px;
+}
+.s4{
+top: 1441px;
+}
+.s5{
+top: 1829px;
+}
+.skroll{
+  position: absolute;
+width: 80px;
+height: 24px;
+left: -32px;
+top: 458px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #667380;
+
+transform: rotate(-90deg);
+}
+.vector{
+position: absolute;
+width: 12px;
+height: 18px;
+top: 520px;
+background:url(../img/vector.png) no-repeat;
+}
+.sv{
+  position: absolute;
+  animation-name: floating;
+  animation-duration: 1.5s;   
+  animation-iteration-count: infinite;
+}
+ 
+@keyframes floating {
+    0% {
+        margin-top: 0px;  
+    }
+    25% {
+        margin-top: 10px;  
+    }
+    50% {
+        margin-top: 15px;  
+    }  
+    75% {
+        margin-top: 10px;  
+    }   
+    100% {
+        margin-top: 5px;
+    }           
+}
+.keyMon{
+  position: absolute;
+width: 756px;
+height: 40px;
+left: 130px;
+top: 612px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+
+color: #FFFFFF;
+}
+.mon{
+position: absolute;
+width: 310px;
+height: 24px;
+left: 130px;
+top: 755px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+
+
+color: #A3B8CC;
+}
+.conins{
+  position: absolute;
+width: 337px;
+height: 20px;
+left: 130px;
+top: 712px;
+}
+.coin{
+  position: absolute;
+height: 20px;
+left: 130px;
+top: 712px;
+display: flex;
+}
+.coins{
+  display: flex;
+  margin-left: -7px;
+}
+.puy{
+position: absolute;
+left: 130px;
+top: 822px;
+cursor: pointer;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+background: none;
+border: none;
+color: #FF7F22;
+opacity: 0.5;
+border-bottom: 1px solid #FF7F22;
+padding-bottom: 5px;
+}
+.BuyCoin{
+  position: absolute;
+width: 216px;
+height: 24px;
+left: 300px;
+top: 822px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+color: #FFFFFF;
+}
+.checkbox{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 260px;
+  top: 818px;
+}
+.Shops{
+
+position: absolute;
+width: 754px;
+height: 40px;
+left: 130px;
+top: 946px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+
+color: #FFFFFF;
+}
+.stock{
+  position: absolute;
+width: 754px;
+height: 40px;
+left: 130px;
+top: 1432px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+color: #FFFFFF;
+
+}
+.Production {
+position: absolute;
+width: 754px;
+height: 72px;
+left: 130px;
+top: 1804px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 72px;
+/* identical to box height, or 225% */
+color: #FFFFFF;
+}
+.card{
+position: absolute;
+width: 236px;
+left: 130px;
+top: 1046px;
+text-align: center;
+}
+.ico{
+  width: 236px;
+  height: 128px;
+}
+.red{
+    box-shadow: 0px 20px 90px 20px #FF7F22;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+}
+.subtractIco{
+  margin: auto;
+  width: 101px;
+  height: 67px;
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+.subtractIco2{
+  width: 80px;
+  height: 80px;
+}
+.bio{
+width: 236px;
+height: 32px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.pay{
+width: 236px;
+height: 24px;
+top: 196px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+color: #A3B8CC;
+}
+.made{
+position: relative;
+width: 200px;
+height: 48px;
+top: 24px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+background: linear-gradient(180deg, #FF7F22 0%, #FF5722 100%);
+border-radius: 60px;
+border: 2px solid #FF7F22;
+cursor: pointer;
+}
+.made:hover{
+  background: #FF5722;
+  border: #FF5722;
+}
+
+.card2{
+  position: absolute;
+  top: 1046px;
+  text-align: center;
+  left: 390px;
+}
+
+.card3{  
+  position: absolute;
+  top: 1046px;
+  text-align: center;
+  left: 650px;
+}
+.elipsa{
+  margin: auto;
+  height: 88px;
+  width: 88px;
+  margin-top: 30px;
+  border: 3px solid #FF7F22;
+  border-radius: 50%;
+}
+.ghost{
+    width: 55px;
+    height: 54px;
+    margin: auto;
+    margin-top: 15px;
+}
+.stocks{
+  position: absolute;
+  top: 1608px;
+  left: 130px;
+  display: flex;
+  text-align: center;
+}
+.cardP{
+margin-left: 15px;
+}
+.cardD{
+margin-left: 15px;
+}
+.Amount{
+  margin-top: 15px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+.madeS{
+position: relative;
+width: 200px;
+height: 48px;
+top: 24px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #7CDAF9;
+background: none;
+border-radius: 60px;
+border: 2px solid #7CDAF9;
+cursor: pointer;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.madeS:hover{
+  background: #7CDAF9;
+  border: #7CDAF9;
+  color: #212529;box-shadow: 0px 10px 40px #1E5466;
+}
+.radio{
+position: absolute;
+left: 130px;
+top: 1941px;
+color: white;
+}
+.radios{
+  margin-top: 28px;
+}
+.FD{
+  margin-left: 31px;
+}
+.width label{
+  display: table-cell;
+  width: 117px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+.Fronend{
+margin-left: 12px;
+}
+
+  .custom-radio>input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label связанного с .custom-radio */
+    .custom-radio>span {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента  before со следующими стилями */
+    .custom-radio>span::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 2px solid #adb5bd;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+
+
+
+
+    .custom-radio>input:checked+span::before {
+      border-color: white;
+      background-color: none;
+      background-image: url("../img/Ellipse 7.png");
+      background-size: 16px;
+    }
+
+    .custom-radio>input:disabled+span::before {
+      background-color: #e9ecef;
+    }
+
+.TypeStab{
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #FFFFFF;
+margin-bottom: 16px;
+}
+.buttons{
+  width: 300px;
+  position: absolute;
+  left: 390px;
+  top: 1945px;
+}
+.checkboxs{
+  float: left;
+}
+.buttons button{
+  width: 48px;
+  height: 48px;
+  padding: 10px 16px;
+  background: none;
+}
+.makesd{
+  position: absolute;
+  width: 236px;
+  height: 48px;
+  left: 130px;
+  top: 2182px;
+  border: 2px solid #4C5865;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background: none;
+  color: #4C5865;
+}
+.makesd:hover{
+  background: #FF5722;
+  border: #FF5722;
+  color: white;
+}
+.makesd:active {
+  background: #FF7F22;
+  border: 2px solid #FF7F22;
+  color: white;
+}
+.makesd:not(:active):disabled {
+  background: none;
+  border: 2px solid #FF7F22;
+}
+.textbuy{
+  position: absolute;
+  width: 195px;
+  height: 48px;
+  left: 390px;
+  top: 2182px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A3B8CC;
+}
+.alone{
+position: absolute;
+width: 236px;
+height: 320px;
+left: 650px;
+top: 1936px;
+
+background: url(../img/3.png);
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; 
+  position: fixed !important;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #A3B8CC;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox:checked+label::before {
+  background-image: url("../img/ok.png");
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #4C5865;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #A3B8CC;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #222B33;
+}
+
+
+/* для элемента input c type="checkbox" */
+    .Iconmeh-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .Iconmeh-checkbox+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .Iconmeh-checkbox+label::before {
+      content: '';
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-left: 15px;
+      background-image: url("../img/Icon meh.png");
+    }
+
+
+
+
+    /* стили для чекбокса, находящегося в фокусе */
+    .Iconmeh-checkbox:focus+label::before {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .Iconmeh-checkbox:focus:not(:checked)+label::before {
+      border-color: #80bdff;
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .Iconmeh-checkbox:checked+label::before {
+      background-image: url("../img/Icon meh2.png");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .Iconmeh-checkbox:disabled+label::before {
+      background-image: url("../img/Icon meh1.png");
+    }
+
+/* для элемента input c type="checkbox" */
+    .hear-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .hear-checkbox+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .hear-checkbox+label::before {
+      content: '';
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-left: 15px;
+      background-image: url("../img/Icon meh4.png");
+    }
+
+
+
+
+
+    /* стили для чекбокса, находящегося в фокусе */
+    .hear-checkbox:focus+label::before {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .hear-checkbox:focus:not(:checked)+label::before {
+      border-color: #80bdff;
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .hear-checkbox:checked+label::before {
+      background-image: url("../img/Icon meh5.png");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .hear-checkbox:disabled+label::before {
+      background-image: url("../img/Icon meh4.png");
+    }
+    /* для элемента input c type="checkbox" */
+    .ghost-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .ghost-checkbox+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .ghost-checkbox+label::before {
+      content: '';
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-left: 15px;
+      background-image: url("../img/Icon meh4.png");
+    }
+
+
+
+    /* стили для чекбокса, находящегося в фокусе */
+    .ghost-checkbox:focus+label::before {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .ghost-checkbox:focus:not(:checked)+label::before {
+      border-color: #80bdff;
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .ghost-checkbox:checked+label::before {
+      background-image: url("../img/Icon meh6.png");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .ghost-checkbox:disabled+label::before {
+      background-image: url("../img/Icon meh6.png");
+    }
+#mone{
+  position: fixed;
+  display: none;
+}
+.KMO{
+position: fixed;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+background: #1A1A1A;
+opacity: 0.67;
+z-index: 4;
+}
+.menu{
+    position: relative;
+    width: 496px;
+    height: 240px;
+    margin-left: 50%;
+    z-index: 5;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 90%;
+    transform: translateY(-50%);
+}
+#close{
+position: absolute;
+width: 20px;
+height: 20px;
+left: 454px;
+top: 16px;
+border: none;
+cursor: pointer;
+background: url(../img/close.png) no-repeat center center;
+}
+.coinB{
+position: relative;
+left: 34px;
+top: 48px;
+width: 43px;
+height: 52px;
+background:url(../img/12.png);
+}
+.modal{
+
+}
+.Koll{
+position: absolute;
+width: 320px;
+height: 80px;
+left: 106px;
+top: 33px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+
+color: #212529;
+}
+.You{
+position: relative;
+width: 306px;
+height: 64px;
+left: 106px;
+top: 70px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* or 160% */
+
+
+color: #4C5865;
+}
+.GJ{
+    position: fixed;
+  display: none;
+}
+.Cool{
+  position: absolute;
+margin-left: 106px;
+width: 305px;
+height: 80px;
+top: 33px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+
+color: #212529;
+}
+.Youu{
+  position: absolute;
+  margin-left: 106px;
+width: 306px;
+height: 64px;
+top: 136px;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* or 160% */
+
+
+color: #4C5865;
+}
