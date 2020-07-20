@@ -55,10 +55,10 @@
 		<p class="mon">
 		{{ gold }} biorobo монет</p>
 
-			<button class="puy" id="goldAdd" v-on:click="gold += 1">Нацыганить</button>
+			<button class="puy" id="goldAdd" @click="addGold">Нацыганить</button>
 
 
-		<input class="custom-checkbox" id="checkbox" type="checkbox" value="value" v-model="farm" true-value="5" false-value="1">
+		<input class="custom-checkbox" id="checkbox" type="checkbox" v-model="checked">
 		<label for="checkbox" class="BuyCoin">Цыганить по 5 монет</label>
 
 
@@ -66,60 +66,29 @@
 
 	</div>
 	<div class="s3 s">03</div>
-	<div>
+	<div class="cards">
 		<p class="Shops">Рынок комплектующих</p>
 		<div class="items">
-			<div class="card">
+			<div class="card" v-for="(item, key) in shop">
 				<div class="ico">
 					<div class="red"></div>
 					<img src="img/Subtract3.png" class="subtractIco">
 				</div>
-				<p class="bio">Биомеханизм</p>
-				<p class="pay">Стоимость: 7 монет</p>
-				<button class="made" v-on:click="gold -= 7, item1 += 1">Установить</button>
-			</div>
-			<div class="card2">
-				<div class="ico">
-					<div class="red"></div>
-					<img src="img/Vector2.png" class="subtractIco subtractIco2">
-				</div>
-				<p class="bio">Процессор</p>
-				<p class="pay">Стоимость: 5 монет</p>
-				<button class="made" v-on:click="gold -= 5 , item2 += 1" >Установить</button>
-			</div>
-			<div class="card3">
-				<div class="ico">
-					<div class="red"></div>
-					<div class="elipsa">
-					<img src="img/Group16.png" class="ghost"></div>
-				</div>
-				<p class="bio">Душа</p>
-				<p class="pay">Стоимость: 25 монет</p>
-				<button class="made" v-on:click="gold -= 25 , item3 += 1" >Установить</button>
+				<p class="bio">{{ item.title }}</p>
+				<p class="pay">Стоимость: {{ item.price }} монет</p>
+				<button class="made" v-on:click="buy(key)">Установить</button>
 			</div>
 		</div>
 	</div>
 	<div class="s4 s">04</div>
 	<div>
 		<p class="stock">Склад</p>
-		<div class="stocks">
-			<div class="cardB">
-				<p class="bio">Биомеханизм</p>
-				<p class="pay">Стоимость: 5 монет</p>
-				<p class="Amount">{{item1}} шт</p>
-				<button class="madeS" v-on:click="gold += 5 , item1 -= 1">Продать</button>
-			</div>
-			<div class="cardP">
-				<p class="bio">Процессор</p>
-				<p class="pay">Стоимость: 3 монет</p>
-				<p class="Amount">{{item2}} шт</p>
-				<button class="madeS" v-on:click="gold += 3 , item2 -= 1">Продать</button>
-			</div>
-			<div class="cardD">
-				<p class="bio">Душа</p>
-				<p class="pay">Стоимость: 15 монет</p>
-				<p class="Amount">{{item3}} шт</p>
-				<button class="madeS" v-on:click="gold += 15 , item3 -= 1" >Продать</button>
+		<div class="stocks items">
+			<div class="cardB shop-item" v-for="(item, key) in items">
+				<p class="bio"> {{ shop[item.index].title }} </p>
+				<p class="pay">Стоимость: {{ shop[item.index].sold }} монет</p>
+				<p class="Amount">{{ item.count }} шт</p>
+				<button class="madeS" @click="sold(key)">Продать</button>
 			</div>
 		</div>
 	</div>
@@ -156,28 +125,28 @@
 		</div>
 		<div class="buttons">
   <div class="checkboxs">
-    <input class="Iconmeh-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+    <input class="Iconmeh-checkbox" type="checkbox" id="color-1" name="color-1">
     <label for="color-1"></label>
   </div>
 
   <div class="checkboxs">
-    <input class="Iconmeh-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
+    <input class="Iconmeh-checkbox" type="checkbox" id="color-2" name="color-2">
     <label for="color-2"></label>
   </div>
 
   <div class="checkboxs">
-    <input class="Iconmeh-checkbox" type="checkbox" id="color-3" name="color-3" value="brown" disabled="disabled">
+    <input class="Iconmeh-checkbox" type="checkbox" id="color-3" name="color-3" disabled="disabled">
     <label for="color-3"></label>
   </div>
 
   <div class="checkboxs">
-    <input class="Iconmeh-checkbox" type="checkbox" id="color-4" name="color-4" value="yellow">
+    <input class="Iconmeh-checkbox" type="checkbox" id="color-4" name="color-4" >
     <label for="color-4"></label>
   </div>
 
 
   <div class="checkboxs">
-    <input class="hear-checkbox" type="checkbox" id="hear-1" name="hear-1" value="indigo">
+    <input class="hear-checkbox" type="checkbox" id="hear-1" name="hear-1" >
     <label for="hear-1"></label>
   </div>
 
@@ -187,7 +156,7 @@
   </div>
 
   <div class="checkboxs">
-    <input class="hear-checkbox" type="checkbox" id="hear-3" name="hear-3" value="brown" disabled="disabled">
+    <input class="hear-checkbox" type="checkbox" id="hear-3" name="hear-3" disabled="disabled">
     <label for="hear-3"></label>
   </div>
 
