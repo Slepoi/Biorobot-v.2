@@ -199,7 +199,7 @@ left: 31px;
 top: 4px;
 border-radius: 100%;
 background: #1E2936;
-z-index: -1;
+z-index: 0;
 }
 .subtract{
 position: absolute;
@@ -207,6 +207,7 @@ width: 176px;
 height: 309.31px;
 left: 0px;
 top: 0.69px;
+z-index: 1;
 }
 .subtract2{
 position: absolute;
@@ -215,6 +216,7 @@ height: 195.89px;
 left: 194.35px;
 top: 102px;
 transform: scale(1, 1);
+z-index: 1;
 }
 .s{
 position: absolute;
@@ -447,11 +449,10 @@ line-height: 72px;
 color: #FFFFFF;
 }
 .card{
-position: absolute;
-width: 236px;
-left: 130px;
-top: 1046px;
-text-align: center;
+    width: 236px;
+    margin-top: 1046px;
+    text-align: center;
+    float: left;
 }
 .ico{
   width: 236px;
@@ -508,7 +509,7 @@ color: #A3B8CC;
 position: relative;
 width: 200px;
 height: 48px;
-top: 24px;
+margin-top: 24px;
 font-family: sans-serif;
 font-style: normal;
 font-weight: 600;
@@ -524,7 +525,9 @@ cursor: pointer;
   background: #FF5722;
   border: #FF5722;
 }
-
+.items{
+  margin-left: 130px;
+}
 .card2{
   position: absolute;
   top: 1046px;
