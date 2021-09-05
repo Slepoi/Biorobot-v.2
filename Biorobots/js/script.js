@@ -7,7 +7,7 @@ new Vue({
   },
   data: {
   	checked: false,
-    gold: 99,
+    gold: 0,
     img: './img/coin.png',
     shop:[
       {title: "Биомеханизм", price: 7, sold: 5, img: './img/Subtract3.png'},
