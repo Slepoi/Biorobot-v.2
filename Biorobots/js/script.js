@@ -10,7 +10,8 @@ new Vue({
     },
     data: {
         checked: false,
-        gold: 0,
+        isHasMoneyAndAllDetails: true,
+        gold: 99,
         img: './img/coin.png',
         shop: [{
                 title: "Биомеханизм",
@@ -31,26 +32,29 @@ new Vue({
                 img: './img/Soul .png'
             }
         ],
-        item1: 4,
         item2: 4,
         item3: 1,
         items: [],
         pickedType: 'FrontEnd',
-        pickedgender: 'Male',
-        Robot: './img/nofrontMale.png'
+        pickedgender: 'Male'
     },
-    methods: {
-        CreateRobot: function() {
+    computed: {
+        Robot () {
             if ((this.pickedType == 'FrontEnd') && (this.pickedgender == 'Female')) {
-                this.Robot = './img/nofrontFeMale.png'
+                return './img/nofrontFeMale.png'
             } else if ((this.pickedType == 'FrontEnd') && (this.pickedgender == 'Male')) {
-                this.Robot = './img/nofrontmale.png'
+                return './img/nofrontmale.png'
             } else if ((this.pickedType == 'Design') && (this.pickedgender == 'Female')) {
-                this.Robot = './img/noDesignerFeMale.png'
-            } else if ((this.pickedType == 'Design') && (this.pickedgender == 'Male')) {
-                this.Robot = './img/noDesignerMale.png'
+                return './img/noDesignerFeMale.png'
+            } else {
+                return './img/noDesignerMale.png'
             }
         },
+        item1 (){
+            return 1
+        }
+    },
+    methods: {
         addGold: function() {
             if (100 <= this.gold) {
                 openModal.style.display = 'block';

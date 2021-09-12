@@ -101,11 +101,11 @@
                     <form action="">
                         <div class="width">
                             <label class="custom-radio">
-                                <input type="radio" @click="CreateRobot" name="Type" value="FrontEnd" v-model="pickedType">
+                                <input type="radio" name="Type" value="FrontEnd" v-model="pickedType">
                                 <span>FrontEnd</span>
                             </label>
                             <label class="custom-radio">
-                                <input type="radio" @click="CreateRobot" name="Type" value="Design" v-model="pickedType">
+                                <input type="radio" name="Type" value="Design" v-model="pickedType">
                                 <span>Design</span>
                             </label>
                         </div>
@@ -114,11 +114,11 @@
                         <p class="TypeStab">Стабилизатор:</p>
                         <div class="width">
                             <label class="custom-radio">
-                                <input type="radio" @click="CreateRobot" name="gender" value="Male" v-model="pickedgender">
+                                <input type="radio" name="gender" value="Male" v-model="pickedgender">
                                 <span>Male</span>
                             </label>
                             <label class="custom-radio">
-                                <input type="radio" @click="CreateRobot" name="gender" value="Female" v-model="pickedgender">
+                                <input type="radio" name="gender" value="Female" v-model="pickedgender">
                                 <span>Female</span>
                             </label>
                         </div>
@@ -171,7 +171,7 @@
                         <label for="ghost1"></label>
                     </div>
                 </div>
-                <button class="makesd">Произвести за 10 монет</button>
+                <button class="makesd" :active="isHasMoneyAndAllDetails">Произвести за 10 монет</button>
                 <p class="textbuy" v-for="(item, key) in items">
                     Для производства биоробота не хватает , {{ item1 }} биомеханизма, {{ item2 }} процессора и {{ item3 }} души
                 </p>
@@ -221,4 +221,5 @@
 </body>
 <script src="js/vue.js"></script>
 <script src="js/script.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>
